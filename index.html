@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-image: url(img/img.gif);
+        background-size: cover;
+    }
+    #header{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            width: 2000px;
+            height: 100%;
+            background-image: url(img/커튼.webp);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo{
+            width: 100px;
+            margin-left: 5px;
+        }
+        #logo a{
+            color: blue;
+            text-decoration: none;
+            text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        }
+        #log{
+            width: 100px;
+        }
+        #menu_ul{
+            width: calc(100% - 200px);
+            height: 50px;
+            display: flex;
+            background-image: url(img/pngtree-golden-yellow-background-image_1539941.jpg);
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px 10px 10px 10px;
+            background-size: cover;
+        }
+        #menu_ul li{
+            list-style: none;
+        }
+        #menu_ul li a{
+            text-decoration: none;
+            text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+            font-size: large;
+            color: #eee;
+        }
+        
+        #menu_ul li a:hover{
+            color: white;
+            background-color:purple;
+        }
+        #menu{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .elqkf{
+            background-color: #f1f3f5;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #f1f3f5;
+        }
+        .com{
+            width: 600px;
+            margin: 30px auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .goej{
+            border: 1px solid #000;
+            margin: 0px;
+            height: 265px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 10px;
+        }
+        .thrtjd{
+            border: 1px solid #f1f3f5;
+            margin: 10px;
+            padding: 0 30px;
+        }
+        .thrtjd div h2{
+            background-color: #f1f3f5;
+        }
+        .goej div h1{
+            color: white;
+            background: deepskyblue;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .scp{
+            font-size: 0.9rem;
+        }
+        .scp p{
+            color: deepskyblue;
+            font-size: 1.1rem;
+            text-decoration: underline;
+            font-weight: bold;
+            text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        }
+        .dhsmf{
+            color: red;
+            font-weight: bold;
+        }
+        .enqjsWo{
+            color: blue;
+            font-weight: bold;
+            text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        }
+        .tpqjsWo{
+            font-size: 1.1rem;
+            color: red;
+            text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+            font-weight: bold;
+            font-style: italic;
+        }
+        #thrtjd div p{
+            color: #adb5bd;
+            text-align: right;
+            margin-top: 0;
+        }
+        .content{
+            margin: 30px 20px;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 15px;
+            color: white;
+            text-shadow: 3px 3px 3px black;
+        }
+        #intro:target{
+            background-image: url(img/view-of-3d-cinema-theatre-room_23-2150866053.avif);
+            color: #fff;
+            background-size: cover;
+            text-shadow: 3px 3px 3px black;
+        }
+        #movie{
+            background-image: url(img/2018052000038_0.jpg);
+            color: red;
+            background-size: cover;
+            text-shadow: 3px 3px 3px black;
+
+        }
+        #booking:target{
+            background-image: url(img/다운로드.jpg);
+            color: white;
+            text-shadow: 3px 3px 3px black;
+        }
+        #box{
+            display: flex;
+            flex-direction: row;
+            margin: 0px auto;
+            padding-top: 200px;
+            width: 80%;
+            
+        }
+</style>
+</head>
+<body>
+    <header id="header">
+        <div id="container">
+            <div id="logo">
+                <h1><a href="#">KJG</a></h1>
+            </div>
+            <div id="menu">
+                <ul id="menu_ul">
+                    <li><a href="#intro">이용 안내</a></li>
+                    <li><a href="indlx2.html">영화 소개</a></li>
+                    <li><a href="#booking">여약 방법 및 요금</a></li>
+                    <li><a href="indlx.html">예약 하기</a></li>
+                </ul>
+            </div>
+            <div id="log">
+                <a href="#"><img src="img/1707018546928.jpg" alt="사용자" width="50" height="50"></a>
+            </div>
+        </div>
+    </header>
+    <div id="box">
+        <div id="intro" class="content">
+            <h2>이용 안내</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe enim aliquid laudantium sapiente officiis fuga quo nihil quae earum provident, eius ipsam eligendi nesciunt soluta optio nisi perspiciatis at?
+            </p>
+        </div>
+        <div id="movie" class="content">
+            <h2>영화 소개</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aspernatur consectetur cum explicabo dignissimos. Saepe, fuga sequi placeat, adipisci aliquid iusto id, unde doloribus labore praesentium commodi alias hic eius.
+            </p>
+        </div>
+        <div id="booking" class="content">
+            <h2>예약 방법 및 요금</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis quisquam numquam repellendus? Nostrum, atque harum quas quis sint ullam fugiat laborum sed pariatur ad, blanditiis omnis commodi, error natus autem.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

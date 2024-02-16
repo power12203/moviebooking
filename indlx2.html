@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(img/jjj.gif);
+        background-size: cover;
+    }
+    #container{
+        margin: 0px auto;
+        padding: 200px;
+        width: 1000px;
+        padding-top: 100px;
+    }
+    #containe{
+        width: 2000px;
+        height: 100%;
+        background-image: url(img/커튼.webp);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #mod{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+        width: 500px;
+        position: relative;
+    }
+    h3{
+        text-align: center;
+        margin: 0 auto;
+        width: 0 auto;
+        color: white;
+        text-shadow: 4px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-size: 50px;
+    }
+    #xhdltmxhfl, #whzj, #djqpswutm, #fkdldhs{
+        width: 500px;
+        margin: 10px;
+        border: 10px solid brown;
+    }
+    /* #djqpswutm{
+        display: flex;
+    }
+    #whzj{
+        display: flex;
+    } */
+    li{
+        list-style: none;
+        position: relative;
+    }
+    .box1{
+        position: absolute;
+        top: 10px;
+        width: 300px;
+        height: 500px;
+        background-color: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+        text-align: center;
+    }
+    .box1:hover{
+        color: white;
+        text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        opacity: 1;
+        text-align: center;
+        top: 20px;
+        background-image: url(img/img.png);
+    }
+    .box2{
+        position: absolute;
+        top: 10px;
+        width: 300px;
+        height: 500px;
+        background-color: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+        text-align: center;
+    }
+    .box2:hover{
+        color: white;
+        text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        opacity: 1;
+        text-align: center;
+        top: 20px;
+        background-image: url(img/조커_포스터.jpg);
+        background-size: cover;
+    }
+    .box3{
+        position: absolute;
+        top: 10px;
+        width: 300px;
+        height: 500px;
+        background-color: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+        text-align: center;
+    }
+    .box3:hover{
+        color: white;
+        background-image: url(img/다운로드\ \(1\).jpg);
+        text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        opacity: 1;
+        background-size: cover;
+        top: 20px;
+    }
+    .box4{
+        position: absolute;
+        top: 10px;
+        width: 300px;
+        height: 500px;
+        background-color: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+        text-align: center;
+    }
+    .box4:hover{
+        color: white;
+        background-image: url(img/다운로드\ \(2\).jpg);
+        text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        opacity: 1;
+        background-size: cover;
+        top: 20px;
+    }
+    #header{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #containe{
+        width: 2000px;
+        height: 100%;
+        background-color: brown;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo{
+            width: 100px;
+            margin-left: 5px;
+        }
+        #logo a{
+            color: blue;
+            text-decoration: none;
+            text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        }
+        #log{
+            width: 100px;
+        }
+        #menu_ul{
+            width: calc(100% - 200px);
+            height: 50px;
+            display: flex;
+            background-image: url(img/커튼.webp);
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px 10px 10px 10px;
+        }
+        #menu_ul li{
+            list-style: none;
+        }
+        #menu_ul li a{
+            text-decoration: none;
+            text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+            font-size: large;
+            color: #eee;
+        }
+        #mod li h2 {margin-top: 30px;}
+        #menu_ul li a:hover{
+            color: white;
+            background-color:purple;
+        }
+        #menu{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+</style>
+<body id="qkel">
+    <header id="header">
+        <div id="containe">
+            <div id="logo">
+                <h1><a href="#">KJG</a></h1>
+            </div>
+            <div id="menu">
+                <ul id="menu_ul">
+                    <li><a href="index.html">이용 안내</a></li>
+                    <li><a href="indlx2.html">영화 소개</a></li>
+                    <li><a href="index.html">여약 방법 및 요금</a></li>
+                    <li><a href="indlx.html">예약 하기</a></li>
+                </ul>
+            </div>
+            <div id="log">
+                <a href="#"><img src="img/1707018546928.jpg" alt="사용자" width="50" height="50"></a>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <h3>영화 목록</h3>
+        <div id="mod">
+
+            <ul id="djqpswutm">
+                <li>
+                    <img src="img/unnamed.jpg" alt="" width="300" height="500">
+                </li>
+                <li class="box1">
+                <h2>어벤져스: 엔드게임</h2>
+                <p>인피니티 워 이후 많은 사람이 죽고 또 많은 것을 잃게 된 지구는 더 이상 희망이 남지 않아 절망 속에 살아간다. 전쟁 후 남아 있던 어벤저스는 그런 그들의 모습을 보게 된다. 마지막으로 지구를 살리려 모든 것을 건 타노스와 최후의 전쟁을 치른다. <br>
+                가격: 10$</p>
+                </li>
+            </ul>
+            
+            <ul id="whzj">
+                <li>
+                    <img src="img/unnamed.png" alt="" width="300" height="500" >
+                </li>
+                <li class="box2">
+                <h2>조커</h2>
+                <p>고담시에 사는 광대 아서 플렉은 착하게 살아보려 하지만 인생의 부조리함과 쓴 맛이 끊임없이 그를 압도한다. 짝사랑도, 커리어도 마음대로 되지 않고 자신을 향한 세상의 더러움을 견디다 못한 그는 결국 최악의 악당 조커로 재탄생한다. <br>
+                가격: 12$</p>
+                </li>
+            </ul>
+            
+            <ul id="xhdltmxhfl">
+                <li>
+                    <img src="img/Xfod-LilT0U6apGmpsQwnA7vmuVghny3DqCcoyOe2NbOMLS8KzvCCDT1XPoaaIKHd09PoPn4P0yjmiMBTwc9VQ.webp" alt="" width="300" height="500">
+                </li>
+                <li class="box3">
+                <h2>토이 스토리 4</h2>
+                <p>앤디의 집을 떠나 새로운 공간에서 살게 된 우디는 장난감 친구 포키의 돌발행동으로 인해 홀로 모험 길에 오르게 된다. 그러던 중 보핍을 오랜만에 만나고 그녀에게 도움을 청한다. 한편, 사라져버린 우디와 포키를 찾기 위해 버즈와 친구들은 위험한 여정에 오르고 장난감들의 마지막 여정이 시작된다.<br>
+                가격: 8$</p>
+                </li>
+            </ul>
+
+            <ul id="fkdldhs">
+                <li>
+                    <img src="img/qqq.webp" alt="" width="300" height="500">
+                </li>
+                <li class="box4">
+                <h2>더 라이온 킹</h2>
+                <p>정글의 왕 무파사는 왕좌를 노리는 동생 스카의 계략으로 목숨을 잃는다. 정글에서 도망친 무파사의 아들 심바는 낯선 땅에서 새 친구 티몬과 품바를 만나고 다시 살아갈 용기를 얻는다.<br>
+                가격: 9$</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        let djqpswutm = document.querySelectorAll('#djqpswutm')
+        let qkel = document.querySelector('#qkel')
+
+        let changeBackground = function(){
+            qkel.style.backgroundImage = 'url(img/2-ezgif.com-optimize.gif)'
+        }
+
+        djqpswutm.forEach(function(item){
+            item.addEventListener('click', changeBackground)
+        })
+
+
+
+        let whzj = document.querySelectorAll('#whzj')
+        
+        let cgv = function(){
+            qkel.style.backgroundImage = 'url(img/조커.webp)'
+        }
+        whzj.forEach(function(item){
+            item.addEventListener('click', cgv)
+        })
+
+
+        let xhdltmxhfl = document.querySelectorAll('#xhdltmxhfl')
+        
+        let qwe = function(){
+            qkel.style.backgroundImage = 'url(img/토이스토리.gif)'
+        }
+        xhdltmxhfl.forEach(function(item){
+            item.addEventListener('click', qwe)
+        })
+
+        let fkdldhs = document.querySelectorAll('#fkdldhs')
+        
+        let tre = function(){
+            qkel.style.backgroundImage = 'url(img/라이온킹gif.gif)'
+        }
+        fkdldhs.forEach(function(item){
+            item.addEventListener('click', tre)
+        })
+    </script>
+</body>
+</html>

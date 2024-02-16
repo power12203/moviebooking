@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            margin: 50px auto;
+            width: 500px;
+        }
+        #movie{
+            border-radius: 5px 5px 5px 5px;
+            height: 25px;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            background-color: rgba(8, 3, 15, 0.966);
+            color: #fff;
+            box-sizing: border-box;
+            margin: 0%;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .seatContainer{
+            width: 400px;
+            height: 600px;
+            margin: 100px auto;
+            text-align: center;
+            margin-top: 0;
+        }
+        .occupied{
+            margin: 2px;
+            width: 30px;
+            height: 20px;
+            background-color: #6feaf6;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 15px 15px 0px 0px;
+            box-shadow: 0px 0px 20px #ecebeb;
+        }
+        .seat{
+            margin: 2px;
+            width: 30px;
+            height: 20px;
+            background-color: rgb(66, 66, 66);
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 15px 15px 0px 0px;
+        }
+        .seat:nth-child(7), .seat:nth-child(3){
+            margin-left: 20px;
+        }
+        .occupied:nth-child(7), .occupied:nth-child(3){
+            margin-left: 20px;
+        }
+        .showcase{
+            background-color: white;
+            background: rgba(179, 176, 176, 0.1);
+            border-radius: 5px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            margin: 16px 0;
+            padding: 5px 10px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .small{
+            color: #777;
+            margin-left: 2px;
+        }
+        .availableSeat{
+            background-color: #444451;
+            width: 15px;
+            height: 12px;
+            margin: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: default;
+        }
+        .selectedSeatIcon{
+            background-color: #6feaf6;
+            width: 15px;
+            height: 12px;
+            margin: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: default;
+        }
+        .occupiedSeat{
+            background-color: #fff;
+            width: 15px;
+            height: 12px;
+            margin: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .text{
+            margin-top: 30px;
+            padding: 20px;
+        }
+        .screen{
+            margin: 60px;
+            padding: 50px;
+            width: 140px;
+            height: 0px;
+            margin-bottom: 0;
+            border-top: 120px solid white; 
+            border-left: 20px solid transparent; 
+            border-right: 20px solid transparent; 
+            transform: rotateX(-50deg);
+        }
+        #header{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+        #containe{
+            width: 2000px;
+            height: 100%;
+            background-image: url(img/커튼.webp);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo{
+            width: 100px;
+            margin-left: 5px;
+        }
+        #logo a{
+            color: blue;
+            text-decoration: none;
+            text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333;
+        }
+        #log{
+            width: 100px;
+        }
+        #menu_ul{
+            width: calc(100% - 200px);
+            height: 50px;
+            display: flex;
+            background-image: url(img/문양3-blue.jpg);
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px 10px 10px 10px;
+        }
+        #menu_ul li{
+            list-style: none;
+        }
+        #menu_ul li a{
+            text-decoration: none;
+            text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+            font-size: large;
+            color: #eee;
+        }
+        
+        #menu_ul li a:hover{
+            color: white;
+            background-color:purple;
+        }
+        #menu{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+    </style>
+    <script defer src="js/booking.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="containe">
+            <div id="logo">
+                <h1><a href="#">KJG</a></h1>
+            </div>
+            <div id="menu">
+                <ul id="menu_ul">
+                    <li><a href="index.html">이용 안내</a></li>
+                    <li><a href="indlx2.html">영화 소개</a></li>
+                    <li><a href="index.html">여약 방법 및 요금</a></li>
+                    <li><a href="indlx.html">예약 하기</a></li>
+                </ul>
+            </div>
+            <div id="log">
+                <a href="#"><img src="img/1707018546928.jpg" alt="사용자" width="50" height="50"></a>
+            </div>
+        </div>
+    </header>
+    <div id="box">
+        <div id="container">
+            <div class="movieContainer">
+                <label for="movie">영화를 선택하세요:</label>
+                <select name="pickmovie" id="movie">
+                    <option class="price" value="10">어벤져스:엔드게임 ($10)</option>
+                    <option class="price" value="12">조커 ($12)</option>
+                    <option class="price" value="8">토이 스토리 4 ($8)</option>
+                    <option class="price" value="9">더 라이온 킹 ($9)</option>
+                </select>
+            </div>
+        </div>
+     <ul class="showcase">
+            <li>
+                <div class="availableSeat"></div>
+                <small class="small">이용 가능한 좌석</small>
+            </li>
+            <li>
+                <div class="selectedSeatIcon"></div>
+                <small class="small">선택한 좌석</small>
+            </li>
+            <li>
+                <div class="occupiedSeat"></div>
+                <small class="small">예약된 좌석</small>
+            </li>
+        </ul>
+    <div class="seatContainer">
+        <div class="screen"></div>
+        <p class="text">You have selected <span id="count">0</span> seats for a price of $ <span id="costs">0</span></p>
+    </div>
+    </div>
+</body>
+</html>
